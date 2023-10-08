@@ -6,14 +6,24 @@ import { BackendURL } from "./component/backendURL";
 import { Home } from "./pages/home";
 import { Demo } from "./pages/demo";
 import { Single } from "./pages/single";
+import { DogView } from "./pages/dogView";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
-import { SingUp } from "./pages/signup";
+import { SignUp } from "./pages/signup";
 import { Login } from "./pages/login";
+import { Dogs } from "./pages/dogs";
 import { Private } from "./pages/private";
+import { Contact } from "./pages/contact";
+import { AboutUs } from "./pages/aboutUs";
+import { FrequentlyAskedQuestions } from "./pages/frequentlyAskedQuestions";
 import { Forgot } from "./pages/forgot";
+import { Booking } from "./pages/booking";
+import { ProductDisplay } from "./pages/checkout";
+import { Success } from "./pages/success";
+import { Canceled } from "./pages/canceled";
+import { Report } from "./pages/report";
 
 //create your first component
 const Layout = () => {
@@ -31,10 +41,20 @@ const Layout = () => {
                     <Routes>
                         <Route element={<Home />} path="/" />
                         <Route element={<Login />} path="/login" />
-                        <Route element={<SingUp />} path="/signup" />
+                        <Route element={<SignUp />} path="/signup" />
+                        <Route element={<Dogs />} path="/dogs" />
                         <Route element={<Private />} path="/private" />
+                        <Route element={<Contact />} path="/contact" />
+                        <Route element={<AboutUs />} path="/aboutUs" />
+                        <Route element={<FrequentlyAskedQuestions />} path="/frequentlyAskedQuestions" />
                         <Route element={<Forgot />} path="/forgot" />
                         <Route element={<Demo />} path="/demo" />
+                        <Route element={<Booking />} path="/booking" />
+                        <Route element={<ProductDisplay />} path="/checkout" />
+                        <Route element={<Success />} path="/success" />
+                        <Route element={<Canceled />} path="/canceled" />
+                        <Route element={<Report />} path="/report" />
+                        <Route path="/dog/:id" element={<DogView />} />
                         <Route element={<Single />} path="/single/:theid" />
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>

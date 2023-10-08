@@ -1,0 +1,38 @@
+.buttonContainer {
+    display: flex;
+    justify-items: center;
+  }
+  
+  .favoritesCards {
+    border-radius: 20px;
+    margin-left: auto;
+    text-align: end;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1rem;
+    display: flex;
+  }
+  
+  .favoritesCards:hover {
+    background-color: pink
+  }
+  
+  .favorites .btn {
+    border-radius: 20px;
+    justify-content: start;
+    padding-left: 1rem;
+    display: flex;
+    text-align: start;
+    margin-right: auto;
+  }
+
+  .box{
+    background-color: white;
+    padding-top: 16px;
+    height: 500px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    border-radius: 25px;
+  }
+ 
+  
+  
