@@ -14,9 +14,9 @@ export const Navbar = (props) => {
 	const data = localStorage.getItem("user")
 	const parseData = JSON.parse(data)
 	
-	useEffect(()=>{
+	/*useEffect(()=>{
 		actions.getFavouriteDogs(parseData.id)
-	},[])
+	},[])*/
 
 	console.log(store.favorites)
 

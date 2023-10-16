@@ -50,7 +50,7 @@ const createUser = async (event) => {
         password2 !== ''
     ){
        try {
-         const response = await fetch('https://sanghmitra2023-potential-rotary-phone-5wgpxxjgw5rfx97-3001.app.github.dev/api/signup',{
+         const response = await fetch('https://organic-space-invention-wwrjggpr69vcv454-3001.app.github.dev/api/signup',{
             method: 'POST',
             body: JSON.stringify({
                 name: name,

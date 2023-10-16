@@ -218,8 +218,8 @@ def create_checkout_session():
                 'quantity': 1,
                 }],
             mode='payment',
-            success_url='https://sanghmitra2023-potential-rotary-phone-5wgpxxjgw5rfx97-3000.app.github.dev/success',
-            cancel_url='https://sanghmitra2023-potential-rotary-phone-5wgpxxjgw5rfx97-3000.app.github.dev/canceled',
+            success_url='https://organic-space-invention-wwrjggpr69vcv454-3000.app.github.dev/success',
+            cancel_url='https://organic-space-invention-wwrjggpr69vcv454-3000.app.github.dev/canceled',
         )
     except Exception as e:
         return str(e)

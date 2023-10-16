@@ -28,7 +28,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				try {
 					console.log("before fetch")
 					const response = await fetch(
-						"https://sanghmitra2023-potential-rotary-phone-5wgpxxjgw5rfx97-3001.app.github.dev/api/token",
+						"https://organic-space-invention-wwrjggpr69vcv454-3001.app.github.dev/api/token",
 						{
 							method: "POST",
 							headers: {
@@ -57,7 +57,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			getUser: async () => {
 				const store = getStore()
 				try {
-					const response = await fetch("https://sanghmitra2023-potential-rotary-phone-5wgpxxjgw5rfx97-3001.app.github.dev/api/protected", {
+					const response = await fetch("https://organic-space-invention-wwrjggpr69vcv454-3001.app.github.dev/api/protected", {
 						headers: { Authorization: `Bearer ${store.authToken}` }
 					});
 					if (response.ok) {
@@ -75,7 +75,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			loadUser: async () => {
 				const store = getStore();
 				try {
-					const response = await fetch("https://sanghmitra2023-potential-rotary-phone-5wgpxxjgw5rfx97-3001.app.github.dev/api/user", {
+					const response = await fetch("https://organic-space-invention-wwrjggpr69vcv454-3001.app.github.dev/api/user", {
 						headers: { Authorization: `Bearer ${store.authToken}` }
 					});
 					if (response.ok) {
@@ -104,7 +104,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			addDogToFavourite: async (dog_id, user_id) => {
 				try {
 					const response = await fetch(
-						"https://sanghmitra2023-potential-rotary-phone-5wgpxxjgw5rfx97-3001.app.github.dev/api/favorite/dog/"+dog_id,
+						"https://organic-space-invention-wwrjggpr69vcv454-3001.app.github.dev/api/favorite/dog/"+dog_id,
 						{
 							method: "POST",
 							headers: {
@@ -172,7 +172,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 		
 			loadSomeData: () => {
-				fetch("https://sanghmitra2023-potential-rotary-phone-5wgpxxjgw5rfx97-3001.app.github.dev/api/dog")
+				fetch("https://organic-space-invention-wwrjggpr69vcv454-3001.app.github.dev/api/dog")
 				  .then((res) => res.json())
 				  .then((data) => {
 					console.log(data);
